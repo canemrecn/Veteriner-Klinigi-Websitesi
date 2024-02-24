@@ -1,0 +1,115 @@
+body {
+    background-image: url('24.jpg'); /* Resmin dosya yolunu belirtin */
+    background-size: cover; /* Resmi sayfanın tamamını kaplayacak şekilde ölçeklendir */
+    background-repeat: no-repeat; /* Resmin tekrarlanmasını engelle */
+    background-attachment: fixed; /* Resmi sayfada sabit bir konumda tut */
+    background-position: center center; /* Resmi sayfanın ortasında hizala */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Navbar genel stil */
+#navbar {
+    background-color: #000000; /* Arka plan rengi (koyu mavi) */
+    color: white; /* Metin rengi (beyaz) */
+    padding: 10px 0; /* Navbar içeriği ile arka plan arasındaki boşluk */
+}
+#navbar h2 {
+    font-size: 24px; /* Başlık metni boyutu */
+    margin-right: 20px; /* Sağ boşluk */
+}
+/* Navbar içerik stil */
+.navbar-toggler-icon {
+    color: wheat; /* Menü açma/kapama simgesi rengi (beyaz) */
+}
+.nav-link {
+    color: wheat !important; /* Menü bağlantılarının metin rengi (beyaz) */
+    font-size: 18px; /* Menü bağlantılarının metin boyutu */
+    margin-right: 20px; /* Menü bağlantıları arasındaki boşluk */
+}
+.nav-link:hover {
+    background-color: white;
+}
+/* Navbar buton stil */
+.navbar-toggler {
+    border-color: white; /* Menü açma/kapama düğmesinin kenarlık rengi (beyaz) */
+}
+h1 {
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-family: Arial, sans-serif;
+    font-size: 70px;
+
+}
+
+h3{
+    color: #000000;
+}
+h4{
+    color: #000000;
+}
+
+h5 {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+a{
+    font-size: 13px;
+}
+.card {
+    width: 900px;
+    height: 125px;
+    border: 12px solid #212529;
+    overflow: hidden;
+    position: absolute;
+    top: 6%;
+    left: 25%;
+}
+.image-container {
+    display: flex;
+    animation: slide 30s linear infinite;
+    top: 0;
+}
+.animate-me {
+    width: auto; /* Resmi orijinal boyutunda tutar */
+    height: 100%; /* Resmi kartın yüksekliğine sığdırır */
+    margin-right: 10px;
+    margin-left: 20px; /* Resimler arasında boşluk bırakmak için */
+}
+@keyframes slide {
+    0% {
+        transform: translateX(100%); /* Sağ köşeden başlasın */
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+h2 {
+    position: absolute;
+    bottom: 8%;
+    left: 69%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: wheat;
+}
+.carousel-inner img {
+    max-height: none;
+}
+
+.d-flex.position-relative {
+  width: 99%; /* Genişliği yüzde olarak ayarlayarak ekrana tam sığdırın */
+  height: 43vh; /* Yüksekliği ekran yüksekliği kadar yaparak ekrana tam sığdırın */
+  position: relative; /* Öğeyi göreceli olarak konumlandır */
+  left: 5px; /* Öğeyi 5 piksel sağa kaydır */
+  bottom: 45px; /* Öğeyi 45 piksel aşağı kaydır */
+  background-color: wheat; /* Arkaplan rengi */
+  border: 10px solid black; /* 2 piksel kalınlığında siyah bir çerçeve ekleyin */
+  padding: 10px; /* İçerik ile çerçeve arasına 10 piksel boşluk bırakın */
+}
+
+  
+  
